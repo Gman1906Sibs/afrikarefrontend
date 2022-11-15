@@ -1,5 +1,5 @@
 import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Rating from "./Rating";
 import Pagination from "./pagination";
 import Loading from "../LoadingError/Loading";

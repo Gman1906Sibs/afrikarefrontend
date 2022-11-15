@@ -67,8 +67,8 @@ textarea:focus {
   position: absolute;
 }
 .ban-cat-btn-og {
-  border-color: #189AB4;
-  background-color: #189AB4;
+  border-radius: 5px;
+  background-color: white;
 }
 .ban-cat-btn-og:hover{
   background-color: white;
@@ -90,8 +90,9 @@ textarea:focus {
 }
 .banner {
   max-width: 1500px;
-  object-fit: contain;
+  min-width: 100vw;
   overflow: hidden;
+  max-height: 600px;
   
 }
 .banner-text {
@@ -245,7 +246,7 @@ textarea:focus {
 }
 .cat-title {
   display: flex;
-  background-color: #ffffff9a;
+  background-color: #ffffff57;
   width: 100%;
   padding: 10px;
   justify-content: center;
@@ -271,6 +272,15 @@ textarea:focus {
   border-color: #189AB4;
   background-color: white;
   border-radius: 3px;
+}
+.cat-titles {
+  padding: 5px;
+  font-size: 50px;
+  border: 1px;
+  border-color: #189AB4;
+  background-color: rgba(255, 255, 255, 0.801);
+  border-radius: 3px;
+  color: black;
 }
 .cat-btn:hover {
   background-color: #189ab450;

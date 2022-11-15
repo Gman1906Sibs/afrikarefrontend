@@ -37,18 +37,18 @@ const Header = () => {
       <div className="Announcement ">
         <div className="container">
           <div className="row">
-            <div className="col-md-6 d-flex align-items-center display-none">
+            <div className="col-md-6  ">
               <p>+27 78 776 0294</p>
               <p>info@afrikare.co.za</p>
             </div>
-            <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex align-items-center">
-              <a href="https://www.facebook.com/AfriKareSA" target="_blank">
+            <div className=" col-12 col-lg-6 justify-content-center justify-content-lg-end d-flex display-none d-flex align-items-center align-items-center ">
+              <a href="https://www.facebook.com/AfriKareSA" target="_blank" rel="noreferrer">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.instagram.com/afrikare" target="_blank">
+              <a href="https://www.instagram.com/afrikare" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
-              <a href="https://twitter.com/afrikare4" target="_blank">
+              <a href="https://twitter.com/afrikare4" target="_blank" rel="noreferrer">
                 <i className="fab fa-twitter"></i>
               </a>
             </div>

@@ -1,9 +1,9 @@
 import { generatePreHash, generateSignature } from "./generatePaymentSignature";
 
-const passphrase = "helloworld1990"
-   const merchant_id =  "10027583"
-   const merchant_key = "ntokols4n2w5l"
-   const paymentURL = "https://sandbox.payfast.co.za/eng/process"
+const passphrase = "Afrikare54321"
+   const merchant_id =  "21257869"
+   const merchant_key = "kb9yekwzczh4r"
+   const paymentURL = "www.payfast.co.za/eng/process"
 
 export const handlePayfastSession =  (orderId, totalPrice) => {
 

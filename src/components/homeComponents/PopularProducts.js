@@ -42,6 +42,7 @@ const PopularProducts = (props) => {
                   (
                     <>
                        {products.map((product) => (
+                        product.category === "popular" ?
                     <div
                       className="shop col-lg-4 col-md-6 col-sm-6"
                       key={product._id}
@@ -68,7 +69,7 @@ const PopularProducts = (props) => {
                           <h3>R{product.price}</h3>
                         </div>
                       </div>
-                    </div>
+                    </div> : null
                 ))}
                     </>
                   )

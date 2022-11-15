@@ -4,9 +4,14 @@ import homecarebanner from "../../images/homecarebanner.jpg";
 function HomecareBanner() {
   return (
     <div className="banner-container">
-      <h1 className="banner-text">HomeCare</h1>
+      <div className=" cat-text-cont ">
+                      <div className=" cat-titles ">
+                        HomeCare
+                      </div>        
+                </div>
       <img src={homecarebanner} alt="" className="banner" />
     </div>
+
   )
 }
 
