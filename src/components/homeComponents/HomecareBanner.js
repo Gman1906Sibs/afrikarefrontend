@@ -1,5 +1,5 @@
 import React from 'react'
-import homecarebanner from "../../images/homecarebanner.jpg";
+import homecarebanner from "../../images/homecarebanner.png";
 
 function HomecareBanner() {
   return (
