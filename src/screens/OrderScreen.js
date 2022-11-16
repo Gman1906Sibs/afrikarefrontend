@@ -9,6 +9,7 @@ import moment from "moment";
 import axios from "axios";
 import { ORDER_PAY_RESET } from "../Redux/Constants/OrderConstants";
 import {handlePayfastSession} from "../handlePayment/handlePayfastSession"
+import { URL } from "../Redux/Url";
 
 
 const OrderScreen = ({match}) => {
@@ -34,10 +35,10 @@ const OrderScreen = ({match}) => {
 
  const destructureUrl =  () => {
   const url =  handlePayfastSession(orderId, order.totalPrice)
+  console.log(url.actionURL)
   return url.actionURL
  }
 
- console.log(order)
 
 
   if (!loading) {
@@ -54,7 +55,7 @@ const OrderScreen = ({match}) => {
   useEffect(() => {
 
     const addPayPalScript = async() =>{
-      const {data:clientId} = await axios.get("/api/config/paypal")
+      const {data:clientId} = await axios.get(`${URL}/api/config/paypal`)
       const script = document.createElement("script")
       script.type = "text/javascript";
       script.src = `https://www.paypal.com/sdk/js?client-id=${clientId}`;
@@ -263,7 +264,7 @@ const OrderScreen = ({match}) => {
                                   )
                                   :
                                   (
-                                    <button><a href={destructureUrl()} >Pay R {addDecimals(order.totalPrice)}</a></button>
+                                    <button><a href={`https:${destructureUrl()}`} >Pay R {addDecimals(order.totalPrice)}</a></button>
                                   )
                                 }
                                   
