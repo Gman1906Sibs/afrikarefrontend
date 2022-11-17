@@ -256,20 +256,17 @@ const OrderScreen = ({match}) => {
                                 </tbody>
                             </table>
                             {
-                              !order.isPaid && (
-                                <div className="col-12">
-                                {loadingPay && (<Loading />)}
-                                {!sdkReady ? (
-                                    <Loading />
-                                  )
-                                  :
-                                  (
-                                    <button><a href={`https:${destructureUrl()}`} >Pay R {addDecimals(order.totalPrice)}</a></button>
-                                  )
-                                }
+                              !order.isPaid  ? (
+                                    
                                   
-                                </div>
-                              )
+                             
+                                    <button><a href={`https:${destructureUrl()}`} >Pay R {addDecimals(order.totalPrice)}</a></button>
+                                  ) :
+                                  null
+                                
+                                  
+                             
+                              
                             }
                             
                           </div>
