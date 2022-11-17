@@ -1,5 +1,5 @@
 import React from 'react'
-import hairbanner from "../../images/hairbanner.png";
+import hairbanner from "../../images/hairbanner.jpg";
 
 function HomecareBanner() {
   return (

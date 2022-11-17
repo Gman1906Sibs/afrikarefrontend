@@ -90,7 +90,6 @@ textarea:focus {
 }
 .banner {
   max-width: 1500px;
-  min-width: 100vw;
   overflow: hidden;
   max-height: 600px;
   
