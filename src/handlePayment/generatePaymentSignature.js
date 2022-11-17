@@ -1,4 +1,4 @@
-const crypto = require("crypto-js");
+import crypto from "crypto-js"
 
 
 export function generatePreHash(process) {
