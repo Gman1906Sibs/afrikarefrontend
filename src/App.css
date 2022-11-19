@@ -758,6 +758,9 @@ textarea:focus {
 
 .pol-titles {
   padding: 2px;
+  padding-left: 2px;
+  padding-right: 2px;
+  margin-left: 5px;
   border: 1px;
   font-size: 15px;
   border-color: #189ab49d;
