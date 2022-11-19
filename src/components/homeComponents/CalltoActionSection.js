@@ -21,6 +21,15 @@ const CalltoActionSection = () => {
       }, (error) => {
           console.log(error.text);
       });
+      form.current?.reset();
+      
+      const success = document.getElementById('success')
+      success.style.display= 'block';
+
+      setTimeout(() => {
+        success.style.display= 'none';
+      }, 4000);
+      
   };
 
   return (
@@ -36,6 +45,10 @@ const CalltoActionSection = () => {
                   <input placeholder="Your Email..." name="user_email" type="email" />
                   <input value="Yes. I want!" name="subscribe" type="submit" />
                 </form>
+                <br />
+                <div className="message">
+                  <p className="success" id="success">Email Submitted</p>
+                </div>
               </div>
             </div>
           </div>

@@ -861,3 +861,11 @@ textarea:focus {
 .pol-p {
   padding: 15px;
 }
+
+
+.message .success{
+  font-size: 25px;
+  color: rgba(3, 95, 105, 0.683);
+  animation: buttons .3s linear;
+  display: none;
+}
