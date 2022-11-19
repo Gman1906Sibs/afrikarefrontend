@@ -17,13 +17,6 @@ const Footer = () => {
             src="https://upload.wikimedia.org/wikipedia/commons/4/41/Visa_Logo.png"
           />
         </div>
-        
-        <div className="card-name">
-          <img
-            alt="express"
-            src="https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/American-Express-icon.png"
-          />
-        </div>
 
         <Link className="polices" to="/polices">
           <div >

@@ -16,8 +16,14 @@ const PlaceOrderScreen = ({history}) => {
 
   const [courier, setCourier] = useState(0);
 
+  const element = document.getElementById("divcontent")
+
   function onChangeValue(event) {
     setCourier(event.target.value);
+    setTimeout(() => {
+      element.scrollIntoView({block: 'end'});
+    }, 100);
+    
   }
   
 
@@ -181,10 +187,11 @@ const PlaceOrderScreen = ({history}) => {
                     <strong>Courier</strong>
                   </td>
                   <td>
-                  <div onChange={onChangeValue} >
+                  <div className="rdbut" id="divcontent" onChange={onChangeValue} >
                     <input type="radio" name="shipping" value={50} checked={setCourier === 50.00 } />Pudo R50
                     <br/>
                     <input type="radio" name="shipping" value={99}  checked={setCourier === 99.00 }/>Aramex R99
+               
                   </div>
                 </td>
                               {/* <td>R{order.shippingPrice}</td>*/}

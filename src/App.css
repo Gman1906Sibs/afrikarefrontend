@@ -872,3 +872,15 @@ textarea:focus {
   animation: buttons .3s linear;
   display: none;
 }
+
+/* radio buttons */
+
+
+
+
+
+
+.rdbut input:checked  {
+  background-color: #404040 !important;
+  color: red !important;
+}
