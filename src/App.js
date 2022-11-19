@@ -21,6 +21,7 @@ import OrderScreen from "./screens/OrderScreen";
 import SuccessPayment from "./screens/SuccessPayment";
 import FailedPayment from "./screens/FailedPayment";
 import NotFound from "./screens/NotFound";
+import Polices from "./screens/Polices";
 import PrivateRoute from "./PrivateRoute";
 
 const App = () => {
@@ -37,6 +38,7 @@ const App = () => {
         <Route path="/products/:id" component={SingleProduct} />
         <Route path="/login" component={Login} />
         <Route path="/register" component={Register} />
+        <Route path="/polices" component={Polices} />
         <PrivateRoute path="/profile" component={ProfileScreen} />
         <Route path="/cart/:id?" component={CartScreen} />
         <PrivateRoute path="/shipping" component={ShippingScreen} />

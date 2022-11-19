@@ -118,6 +118,10 @@ const Header = () => {
                       <Link className="dropdown-item" to="#" onClick={logoutHandler} >
                         Logout
                       </Link>
+
+                      <a className="dropdown-item" href="https://afrikare-710a6.web.app/login" >
+                        Dashboard
+                      </a>
                     </div>
                   </div>
                   )
@@ -141,6 +145,10 @@ const Header = () => {
                       <Link className="dropdown-item" to="/register">
                         Register
                       </Link>
+
+                      <a className="dropdown-item" href="https://afrikare-710a6.web.app/login" >
+                        Dashboard
+                      </a>
                     </div>
                   </div>
                   )
@@ -212,6 +220,10 @@ const Header = () => {
                       <Link className="dropdown-item" to="#" onClick={logoutHandler} >
                         Logout
                       </Link>
+
+                      <a className="dropdown-item" href="https://afrikare-710a6.web.app/login" >
+                        Dashboard
+                      </a>
                     </div>
                   </div>
                   )
@@ -235,6 +247,10 @@ const Header = () => {
                       <Link className="dropdown-item" to="/register">
                         Register
                       </Link>
+
+                      <a className="dropdown-item" href="https://afrikare-710a6.web.app/login" >
+                        Dashboard
+                      </a>
                     </div>
                   </div>
                   )

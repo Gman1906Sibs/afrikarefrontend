@@ -12,9 +12,9 @@ export const handlePayfastSession =  (orderId, totalPrice) => {
     const process = {
         merchant_id: merchant_id,
         merchant_key: merchant_key,
-        return_url: `http://localhost:3000/success/${orderId}`,
-        cancel_url: `http://localhost:3000/failed/${orderId}`,
-        notify_url: `http://localhost:3000/failed/${orderId}`,
+        return_url: `https://frontend-afrikare.herokuapp.com/success/${orderId}`,
+        cancel_url: `https://frontend-afrikare.herokuapp.com/failed/${orderId}`,
+        notify_url: `https://frontend-afrikare.herokuapp.com/failed/${orderId}`,
         name_first: "",
         email_address: "",
         m_payment_id: "",

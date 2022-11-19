@@ -1,30 +1,48 @@
-import React, { useState } from "react";
+import React, { useRef, useState } from "react";
+import emailjs from '@emailjs/browser';
 
 const CalltoActionSection = () => {
 
   const [formState, setFormState] = useState({});
 
   const changeHandler = (e) => {
+    e.preventDefault()
     setFormState({...formState, [e.target.name] : e.target.value});
   } 
 
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs.sendForm('service_o7pyagt', 'template_pzfxnqc', form.current, 'WgQmv3sP-fBxrzaya')
+      .then((result) => {
+          console.log(result.text);
+      }, (error) => {
+          console.log(error.text);
+      });
+  };
+
   return (
-    <div className="subscribe-section bg-with-black">
-      <div className="container">
-        <div className="row">
-          <div className="col-xs-12">
-            <div className="subscribe-head">
-              <h2>Newsletter</h2>
-              <p>Get tips, information & updates on your favourite products</p>
-              <form className="form-section">
-                <input placeholder="Your Email..." name="email" type="email"  onChange={changeHandler} />
-                <input value="Yes. I want!" name="subscribe" type="submit" />
-              </form>
+    
+      <div className="subscribe-section bg-with-black">
+        <div className="container">
+          <div className="row">
+            <div className="col-xs-12">
+              <div className="subscribe-head">
+                <h2>Newsletter</h2>
+                <p>Get tips, information & updates on your favourite products</p>
+                <form className="form-section" ref={form} onSubmit={sendEmail}>
+                  <input placeholder="Your Email..." name="user_email" type="email" />
+                  <input value="Yes. I want!" name="subscribe" type="submit" />
+                </form>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+
+    
   );
 };
 

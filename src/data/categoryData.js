@@ -1,6 +1,6 @@
-import image1 from "../images/cat1.png";
-import image2 from "../images/cat2.png";
-import image3 from "../images/cat3.png";
+import image1 from "../images/cat1.jpg";
+import image2 from "../images/cat2.jpg";
+import image3 from "../images/cat3.jpg";
 
 
 

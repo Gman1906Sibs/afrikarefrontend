@@ -751,6 +751,25 @@ textarea:focus {
   object-fit: contain;
 }
 
+.polices {
+  display: flex;
+  align-items: center;
+}
+
+.pol-titles {
+  padding: 2px;
+  border: 1px;
+  font-size: 15px;
+  border-color: #189ab49d;
+  background-color: #0990abe7;
+  border-radius: 3px;
+  color: black;
+}
+
+.polices-text {
+  font-weight: lighter;
+  color: white;
+}
 /* Payment */
 .payment-container {
   margin-top: 20px;
@@ -828,4 +847,17 @@ textarea:focus {
 
 .successHeader {
   padding: 20px 0;
+}
+
+/* Polices */
+.pol-h1 {
+  padding: 10px;
+}
+
+.pol-h2 {
+  padding-top: 10px;
+}
+
+.pol-p {
+  padding: 15px;
 }

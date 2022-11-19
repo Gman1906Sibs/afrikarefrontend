@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Footer = () => {
   return (
@@ -23,7 +24,15 @@ const Footer = () => {
             src="https://icons.iconarchive.com/icons/designbolts/credit-card-payment/256/American-Express-icon.png"
           />
         </div>
-       
+
+        <Link className="polices" to="/polices">
+          <div >
+            <div className="pol-titles">
+              <p className="polices-text">Return Polices</p>
+            </div> 
+          </div>
+        </Link>
+
       </div>
     </div>
   );
