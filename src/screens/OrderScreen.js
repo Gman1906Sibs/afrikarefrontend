@@ -260,7 +260,7 @@ const OrderScreen = ({match}) => {
                                     
                                   
                              
-                                    <button><a href={`https:${destructureUrl()}`} >Pay R {addDecimals(order.totalPrice)}</a></button>
+                                    <button><a href={destructureUrl()} >Pay R {addDecimals(order.totalPrice)}</a></button>
                                   ) :
                                   null
                                 
