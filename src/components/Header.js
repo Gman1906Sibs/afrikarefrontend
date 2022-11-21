@@ -45,7 +45,7 @@ const Header = () => {
               <a href="https://www.facebook.com/AfriKareSA" target="_blank" rel="noreferrer">
                 <i className="fab fa-facebook-f"></i>
               </a>
-              <a href="https://www.instagram.com/afrikare" target="_blank" rel="noreferrer">
+              <a href="https://www.instagram.com/afrikare_" target="_blank" rel="noreferrer">
                 <i className="fab fa-instagram"></i>
               </a>
               <a href="https://twitter.com/afrikare4" target="_blank" rel="noreferrer">
@@ -58,7 +58,10 @@ const Header = () => {
 
       <div className="logo-banner">
         <Link  to="/">
-          <img alt="logo" src={logo} className="logo" />
+           {/*<img alt="logo" src={logo} className="logo" />*/}
+           <div>
+            <h1 className="logo">AFRIKARE</h1>
+           </div>
         </Link>
       </div>
 

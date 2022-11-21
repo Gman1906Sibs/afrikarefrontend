@@ -109,6 +109,20 @@ textarea:focus {
 .header {
   padding: 10px 0px 10px 0px;
 }
+.logo{
+  font-size: larger;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-top: 18px;
+  background-color: black;
+  width: fit-content;
+  margin: 30px;
+
+  border-radius: 5px;
+  color: white;
+}
+
 .navbar-brand img {
   width: 35%;
 }
